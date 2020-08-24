@@ -1,0 +1,22 @@
+.img-header
+{
+    width: 30%;
+}
+
+.img-header img
+{
+    margin-top: 70px;
+}
+
+.mid-banner
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-mid
+{
+   align-self: center;
+   
+}

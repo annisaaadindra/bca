@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="arka.css">
 
     <style>
-        button {
+        .button {
             padding: 16px;
             background-color: darkorange;
             color: white;
@@ -18,86 +19,122 @@
         button:hover {
             background-color: #8a4c00;
         }
-        
-        .nav-wrapper
-        {
+
+        .nav-wrapper {
             margin: auto;
             display: flex;
             justify-content: space-around;
-            height: 80px;
+            height: 60px;
+            align-items: center;
+            font-size: 13px;
+            background-color: transparent;
+        }
+
+        .login {
+            width: 10%;
+            display: flex;
+            justify-content: space-around;
             align-items: center;
         }
 
-        .login
-        {
-            width: 12%;
-            display: inline-flex;
-        }
         h1 {
             font-size: 60px;
         }
 
-        menu
-        {
+        menu {
             width: 60%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+        }
+
+        .login button {
+            width: 60px;
+            font-size: 13px;
+            height: 30px;
+        }
+
+        .masuk {
+            color: blue;
+            border: blue;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        header {
+            background-color: #3570D9;
+            color: white;
+            padding-bottom: 80px;
+            width: 100%;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
-    <section class="nav-wrapper">
-        <img src="logo.svg" style="height: 40px">
-        <menu>
-            <menuitem>Dukungan</menuitem>
-            <menuitem>Kelas</menuitem>
-            <menuitem>FAQs</menuitem>
-            <menuitem>Rekrut Talent</menuitem>
-        </menu>
+    <header>
+        <section class="nav-wrapper">
+            <img src="logo.svg" style="height: 30px">
+            <menu>
+                <menuitem>Dukungaxn</menuitem>
+                <menuitem>Kelas</menuitem>
+                <menuitem>FAQs</menuitem>
+                <menuitem>Rekrut Talent</menuitem>
+            </menu>
 
-        <div class="login">
-            <button type="button">Masuk </button>
-            <button type="button">Daftar </button>
-        </menu>
-    </section>
+            <div class="login">
+                <button type="button" class="masuk">Masuk </button>
+                <button type="button" class="daftar">Daftar </button>
+                </menu>
+        </section>
 
-    <div style="display: flex; flex-direction: row; justify-content: space-evenly; padding: ">
-        <div>
-            <h1> Fullstack Mobile Developer</h1>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding: 0px 200px">
+            <div>
+                <h1> Fullstack Mobile Developer</h1>
 
-            <div style="display: flex; flex-direction: row;">
-                <ul>
-                    <li>Algoritma </li>
-                    <li>Javascript.js </li>
-                    <li>Express </li>
-                    <li>Redux </li>
-                    <li> Scrum</li>
-                </ul>
+                <div style="display: flex; flex-direction: row;">
+                    <ul>
+                        <h3>
+                            <li>Algoritma </li>
+                            <li>Javascript.js </li>
+                            <li>Express </li>
+                            <li>Redux </li>
+                            <li> Scrum</li>
+                        </h3>
+                    </ul>
 
 
-                <ul>
-                    <li>Responsive Website</li>
-                    <li>Node.js </li>
-                    <li>React </li>
-                    <li>React Native </li>
-                    <li>Realtime Application</li>
-                </ul>
+                    <ul>
+                        <h3>
+                            <li>Responsive Website</li>
+                            <li>Node.js </li>
+                            <li>React </li>
+                            <li>React Native </li>
+                            <li>Realtime Application</li>
+                        </h3>
+                    </ul>
+                </div>
+                <button type="button" class="button">Daftar Sekarang</button>
             </div>
-            <button type="button">Daftar Sekarang</button>
+            <div class="img-header">
+                <img src="https://assets-arkademy-wesbsite.s3-ap-southeast-1.amazonaws.com/Hero/faztrack-hero-img.jpg"
+                    style="height: 80%; width; 50%">
+            </div>
         </div>
+    </header>
 
-        <div>
-            <img src="https://assets-arkademy-wesbsite.s3-ap-southeast-1.amazonaws.com/Hero/faztrack-hero-img.jpg"
-                style="height: 120%; width; 50%">
+    <section class="mid-banner">
+        <img src="banner.png">
+        <div class="text-mid">
+            <h2>Mengerjakan projek bersama dengan teman satu tim</h2>
+            <h3>
+                Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja sama dan kolaborasi antar individu
+            </h3>
         </div>
-    </div>
-    <img src="banner.png">
-
-    <h1>Mengerjakan projek bersama dengan teman satu tim</h1>
-    <h2>
-        Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja sama dan kolaborasi antar individu
-    </h2>
+    </section>
 
     <h1>Fullstack Mobile Developer</h1>
     <h3>Berikut ini adalah timeline pembelajaran yang akan diterima setiap minggu dalam kelas :</h3>
@@ -176,7 +213,7 @@
     </h4>
 
     <h1> Siap ubah masa depanmu? </h1>
-    <button type="button">Daftar sekarang</button>
+    <button class="button" type="button">Daftar sekarang</button>
 
     <button class="button" type="button"> Hubungi Kami </button>
 </body>
