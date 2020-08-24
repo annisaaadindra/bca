@@ -20,3 +20,20 @@
    align-self: center;
    
 }
+
+.text-curriculum
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.num-curriculum
+{
+    width: 20%;
+}
+
+.desc-curriculum
+{
+    width: 80%;
+}
