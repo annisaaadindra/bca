@@ -1,22 +1,31 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .img-header{
         display:none;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
     .img-header{
         display:none;
     }
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) 
+@media only screen and (max-width: 991px) 
 {
     .img-header{
-        display:inline;
+        display:none;
+    }
+
+    /* membuat mid banner berkumpul di tengah */
+    .mid-banner
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -25,14 +34,21 @@
     .img-header{
         display:inline;
     }
+
+    .mid-banner
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
     .img-header{
         display:inline;
     }
-}
+} */
 
 
 .img-header
@@ -45,12 +61,7 @@
     margin-top: 70px;
 }
 
-.mid-banner
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 .text-mid
 {
@@ -63,6 +74,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 50px 0px;
 }
 
 .num-curriculum
@@ -84,7 +96,7 @@
     transition-duration: 1s;
 }
 
-button:hover {
+.button:hover {
     background-color: #8a4c00;
 }
 
@@ -110,9 +122,15 @@ h1 {
 }
 
 menu {
-    width: 60%;
+    width: 70%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+menuitem
+{
+    /* set minimum width of nav */
+    flex-basis: 15%;
 }
 
 .login button {
@@ -137,5 +155,5 @@ header {
 
 body {
     overflow-x: hidden;
-    margin: 0;
+    margin: 0;/* fullscreen background*/
 }
